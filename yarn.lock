@@ -3488,29 +3488,29 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@lavamoat/aa@npm:^3.1.1":
-  version: 3.1.2
-  resolution: "@lavamoat/aa@npm:3.1.2"
+"@lavamoat/aa@npm:^3.1.5":
+  version: 3.1.5
+  resolution: "@lavamoat/aa@npm:3.1.5"
   dependencies:
-    resolve: ^1.20.0
+    resolve: ^1.22.3
   bin:
     lavamoat-ls: src/cli.js
-  checksum: e580278f2119e26b968105b1ba61d9285537b2577b2f2a256c12d4e623bc544eb7664989855b90e7b2aee6ed23222179423a0c9009f67995ded85678e132332f
+  checksum: 46ced120a30e9472c2e448bd6af694911c644ee036d6cd0087692b47c553b5ac26748a9bff1e99f1220f672579bce664fb48cb2f39884fd0b1a45d16b9195e48
   languageName: node
   linkType: hard
 
 "@lavamoat/allow-scripts@npm:^2.0.3":
-  version: 2.3.1
-  resolution: "@lavamoat/allow-scripts@npm:2.3.1"
+  version: 2.5.1
+  resolution: "@lavamoat/allow-scripts@npm:2.5.1"
   dependencies:
-    "@lavamoat/aa": ^3.1.1
+    "@lavamoat/aa": ^3.1.5
     "@npmcli/run-script": ^6.0.0
     bin-links: 4.0.1
     npm-normalize-package-bin: ^3.0.0
     yargs: ^16.2.0
   bin:
     allow-scripts: src/cli.js
-  checksum: 334612c1ecd357f0143542837ba9982b16e884e4091083b7f437ddc48e79071e3e5503bc3eaa65adf5aa84e4e3021abc074438dd202a72b80ad6fff785caad69
+  checksum: 5f249803b13ad1d2900d1be7d500135b3898f700465e748e7f9d88a7c5a8b07829a0665910d4047ffd65877babe94a80c8e8c9ad8ee02e61446e89bcd4179611
   languageName: node
   linkType: hard
 
@@ -10351,6 +10351,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"function-bind@npm:^1.1.2":
+  version: 1.1.2
+  resolution: "function-bind@npm:1.1.2"
+  checksum: 2b0ff4ce708d99715ad14a6d1f894e2a83242e4a52ccfcefaee5e40050562e5f6dafc1adbb4ce2d4ab47279a45dc736ab91ea5042d843c3c092820dfe032efb1
+  languageName: node
+  linkType: hard
+
 "function.prototype.name@npm:^1.1.5":
   version: 1.1.5
   resolution: "function.prototype.name@npm:1.1.5"
@@ -11371,6 +11378,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"hasown@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "hasown@npm:2.0.0"
+  dependencies:
+    function-bind: ^1.1.2
+  checksum: 6151c75ca12554565098641c98a40f4cc86b85b0fd5b6fe92360967e4605a4f9610f7757260b4e8098dd1c2ce7f4b095f2006fe72a570e3b6d2d28de0298c176
+  languageName: node
+  linkType: hard
+
 "he@npm:1.2.0":
   version: 1.2.0
   resolution: "he@npm:1.2.0"
@@ -11875,6 +11891,15 @@ __metadata:
   bin:
     is-ci: bin.js
   checksum: 77b869057510f3efa439bbb36e9be429d53b3f51abd4776eeea79ab3b221337fe1753d1e50058a9e2c650d38246108beffb15ccfd443929d77748d8c0cc90144
+  languageName: node
+  linkType: hard
+
+"is-core-module@npm:^2.13.0":
+  version: 2.13.1
+  resolution: "is-core-module@npm:2.13.1"
+  dependencies:
+    hasown: ^2.0.0
+  checksum: 256559ee8a9488af90e4bad16f5583c6d59e92f0742e9e8bb4331e758521ee86b810b93bae44f390766ffbc518a0488b18d9dab7da9a5ff997d499efc9403f7c
   languageName: node
   linkType: hard
 
@@ -15892,6 +15917,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"resolve@npm:^1.22.3":
+  version: 1.22.8
+  resolution: "resolve@npm:1.22.8"
+  dependencies:
+    is-core-module: ^2.13.0
+    path-parse: ^1.0.7
+    supports-preserve-symlinks-flag: ^1.0.0
+  bin:
+    resolve: bin/resolve
+  checksum: f8a26958aa572c9b064562750b52131a37c29d072478ea32e129063e2da7f83e31f7f11e7087a18225a8561cfe8d2f0df9dbea7c9d331a897571c0a2527dbb4c
+  languageName: node
+  linkType: hard
+
 "resolve@npm:^2.0.0-next.3":
   version: 2.0.0-next.4
   resolution: "resolve@npm:2.0.0-next.4"
@@ -15928,6 +15966,19 @@ __metadata:
   bin:
     resolve: bin/resolve
   checksum: 5656f4d0bedcf8eb52685c1abdf8fbe73a1603bb1160a24d716e27a57f6cecbe2432ff9c89c2bd57542c3a7b9d14b1882b73bfe2e9d7849c9a4c0b8b39f02b8b
+  languageName: node
+  linkType: hard
+
+"resolve@patch:resolve@^1.22.3#~builtin<compat/resolve>":
+  version: 1.22.8
+  resolution: "resolve@patch:resolve@npm%3A1.22.8#~builtin<compat/resolve>::version=1.22.8&hash=c3c19d"
+  dependencies:
+    is-core-module: ^2.13.0
+    path-parse: ^1.0.7
+    supports-preserve-symlinks-flag: ^1.0.0
+  bin:
+    resolve: bin/resolve
+  checksum: 5479b7d431cacd5185f8db64bfcb7286ae5e31eb299f4c4f404ad8aa6098b77599563ac4257cb2c37a42f59dfc06a1bec2bcf283bb448f319e37f0feb9a09847
   languageName: node
   linkType: hard
 
